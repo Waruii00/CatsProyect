@@ -45,6 +45,60 @@
         poster="img/vidcover.jpg" alt="cover">
      </video>
 
+
+     <h2>Sending Information</h2>
+
+     <p>If you find out any missing information from this site, please sent them to us, and after factchecking they will be integrated to the correct place where they belong, 
+        be it species of wild- or House cats, tips, or historic facts, please submit them in this form:</p>
+
+    <form action="/action_page.php" method="post">
+        <h3>Information Form</h3> <br>
+
+        <div class="FormGroup">
+                <input type="checkbox" name="info1" id="Infocheck" value="correction">
+        <label for="info1">I found incorrect information</label><br>
+        </div>
+
+        <div class="FormGroup">
+            <input type="checkbox" name="info2" id="Infocheck" value="new">
+        <label for="info2">I have new information</label><br>
+        </div>
+        <div class="FormGroup">
+            <input type="checkbox" name="info3" id="Infocheck" value="suggestion">
+        <label for="info3">I have a suggestion</label><br>
+        </div>
+        <div class="FormGroup">
+            <label for="sites">Choose the relevant site:</label>
+        <select name="sites" id="sites">
+            <option value="Main" selected>Main</option>
+            <option value="History">History</option>
+            <option value="Tips" >Tips</option>
+            <option value="Housecats">Housecats</option>
+            <option value="Wildcats">Wildcats</option>
+
+        </select><br>
+        </div>
+        <div class="FormGroup">
+            <textarea name="Info" id="Info" rows="20" cols="50">Write your information here.</textarea><br>
+        </div>
+        <div class="FormGroup">
+            <input type="submit" name="Submit" id="submit"><br>
+        </div>
+        
+     
+        
+     
+       
+
+        
+
+        
+
+        
+
+    </form>
+
+
     <script src="Cats.js"></script>
 </body>
 </html>
