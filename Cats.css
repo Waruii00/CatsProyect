@@ -36,7 +36,7 @@
             background-attachment: fixed;
         }
 
-        p, h1, h2, form{
+        p, h1, h2, form, .tiplist{
             background-color: orangered;
             color: black;
             padding: 20px;
