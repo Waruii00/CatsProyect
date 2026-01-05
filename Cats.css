@@ -74,6 +74,16 @@
             color: black;
         }
 
+        .CardWild{
+            display: flex;
+            width: 500px;
+            border: solid;
+            border-radius: 10px;
+            justify-content: center;
+            background-color: orangered;
+            color: black;
+        }
+
 
         @media screen and (max-width:470px){
             .MenuToggle{
