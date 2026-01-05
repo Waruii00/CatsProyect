@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="Cats.css">
+</head>
+<body>
+    <nav class="NavBar">
+        <div class="MenuToggle" id="MenuToggle">
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+            <div class="Bar"></div>
+        </div>
+        <ul class="NavLinks" id="NavLinks">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Wild Cats</a></li>
+            <li><a href="#">House Cats</a></li>
+            <li><a href="#">Tips</a></li>
+        </ul>
+    </nav>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded",
+         () => {
+            const menuToggle = document.getElementById("MenuToggle")
+            const navLinks = document.getElementById("NavLinks")
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("show")
+            })
+         }
+        )
+
+    </script>
+</body>
+</html>

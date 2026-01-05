@@ -1,0 +1,51 @@
+.NavBar{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            color: gold;
+            background-color: darkred;
+        }
+        .NavLinks{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .NavLinks li a{
+            color: gold;
+            text-decoration: none;/* aláhuzás eltüntetése a linkről */
+            font-size: 20px;
+        }
+
+        .MenuToggle{
+            display: none;
+            cursor: pointer;/* magátolértetődően megváltoztatja a cursort */
+        }
+        .MenuToggle .Bar{
+            width: 30px;
+            height: 5px;
+            background-color: gold;
+            margin: 10px 0 ;
+        }
+
+
+        @media screen and (max-width:470px){
+            .MenuToggle{
+                display: block;
+            }
+            .NavLinks{
+                display: none;
+                flex-direction: column;/* ez abban lesz majd jo ha le tudjuk majd nyitni a hamburgert */
+                position: absolute;
+                left: 10px;
+                top: 50px;
+                background-color: darkred;
+                padding: 20px;
+            }
+            .NavLinks li a{
+                text-align: center;
+            }
+            .NavLinks.show{
+                display: flex;
+            }
+            
+        }
