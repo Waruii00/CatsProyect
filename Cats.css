@@ -57,6 +57,23 @@
             border-radius: 10px;
         }
 
+        .Cardholder{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .Card{
+            display: flex;
+            width: 300px;
+            border: solid;
+            border-radius: 10px;
+            justify-content: center;
+            background-color: orangered;
+            color: black;
+        }
+
 
         @media screen and (max-width:470px){
             .MenuToggle{
